@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomHeaderMain" customModule="iConnect" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="ZTK-st-Xwt" id="xU3-tZ-NHC"/>
+                <outlet property="backButtonLeftNSConstraint" destination="HEe-YG-Wj3" id="4c0-S3-Yfs"/>
+                <outlet property="headerName" destination="eG6-OP-64p" id="K8e-lQ-xpf"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="LNu-jg-8L4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nmo-qb-LnH" customClass="HeaderParentView" customModule="iConnect" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <button contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTK-st-Xwt">
+                            <rect key="frame" x="5" y="7.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="Jx5-54-QuJ"/>
+                                <constraint firstAttribute="height" constant="35" id="kSb-7D-Zwx"/>
+                            </constraints>
+                            <state key="normal" image="back"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mvvm-demo VOICE CALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eG6-OP-64p">
+                            <rect key="frame" x="78" y="15.5" width="164" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ZTK-st-Xwt" firstAttribute="leading" secondItem="Nmo-qb-LnH" secondAttribute="leading" constant="5" id="HEe-YG-Wj3"/>
+                        <constraint firstItem="eG6-OP-64p" firstAttribute="centerY" secondItem="Nmo-qb-LnH" secondAttribute="centerY" id="NI2-KH-Otg"/>
+                        <constraint firstItem="ZTK-st-Xwt" firstAttribute="centerY" secondItem="Nmo-qb-LnH" secondAttribute="centerY" id="VIa-Rm-R0o"/>
+                        <constraint firstAttribute="height" constant="50" id="k9U-Qh-xOZ"/>
+                        <constraint firstItem="eG6-OP-64p" firstAttribute="centerX" secondItem="Nmo-qb-LnH" secondAttribute="centerX" id="pjy-u8-AEX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Nmo-qb-LnH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dKz-xh-9vh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Nmo-qb-LnH" secondAttribute="trailing" id="iir-oQ-Mhq"/>
+                <constraint firstItem="Nmo-qb-LnH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rdF-ZL-s4E"/>
+            </constraints>
+            <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="512" height="512"/>
+    </resources>
+</document>
